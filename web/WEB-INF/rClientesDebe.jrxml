@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e48bf74f-2a02-4a73-90f4-e984c9b26ab6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="54a7befa-606d-4588-8adc-5bbac616d56f"/>
+	<parameter name="pImporteTotal" class="java.math.BigDecimal"/>
+	<queryString>
+		<![CDATA[Select r.idRegistro,apellido+nombre[Cliente], e.estadoPago,SUM(monto)[Total]
+	From Registros r, DetalleRegistro d,Clientes c, EstadoPago e
+	Where r.idRegistro = d.idRegistro and 
+		  c.idCliente = r.idCliente and
+		  r.idEstadoPago = e.idEstadoPago and  
+		  e.estadoPago = 'Debe'
+	Group by r.idRegistro,apellido+nombre, e.estadoPago]]>
+	</queryString>
+	<field name="idRegistro" class="java.lang.Integer"/>
+	<field name="Cliente" class="java.lang.String"/>
+	<field name="estadoPago" class="java.lang.String"/>
+	<field name="Total" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95" splitType="Stretch">
+			<staticText>
+				<reportElement x="103" y="0" width="352" height="36" forecolor="#000033" backcolor="#000033" uuid="6c0655de-00a7-458b-9f7c-71a19a13366a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Gill Sans Ultra Bold Condensed" size="26" isBold="false" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[LAVANDERIA LAVARELA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="59" width="265" height="36" forecolor="#000033" backcolor="#000033" uuid="e98dbbc1-2b85-439e-ad19-9389825ef89a"/>
+				<textElement>
+					<font fontName="SansSerif" size="18" isBold="false" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE TOTAL DE DEUDAS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="94" width="549" height="1" uuid="6af6d61b-b768-4b59-98d1-b8c986e62f09"/>
+			</line>
+			<image>
+				<reportElement x="3" y="0" width="135" height="94" uuid="ee5d3b08-4312-468a-a330-029c7584de78"/>
+				<imageExpression><![CDATA["D:\\GASTON\\TECNICATURA PROG\\TESIS\\LAVARELA.110534(25 ENTREGA)\\LAVARELA.110534\\web\\img\\LogoLavarela.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="15" width="138" height="20" uuid="3d24c4ad-aef5-4396-a32e-8e04b3143e30"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Nro. Registro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="15" width="138" height="20" uuid="761bd148-d899-4f92-95ea-713717fc4882"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="15" width="138" height="20" uuid="38994cf1-3331-497f-a745-2f2ee3352c37"/>
+				<textElement textAlignment="Left"/>
+				<text><![CDATA[Estado Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="15" width="138" height="20" uuid="0f1d5755-d8de-4eb3-aad0-14da2727214a"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="3" y="34" width="549" height="1" uuid="b9fb4c4d-b85a-4286-b35a-8ddac4e17d92"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="5" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="138" height="20" uuid="006696bd-b877-4bd2-b153-7f5e094bbdeb"/>
+				<textFieldExpression><![CDATA[$F{idRegistro}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="0" width="138" height="20" uuid="21eaba54-11b0-4ec1-82d9-ffc9e60ea063"/>
+				<textFieldExpression><![CDATA[$F{Cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="138" height="20" uuid="c1727335-a31a-41cd-bf20-5f0f0a1a9e42"/>
+				<textFieldExpression><![CDATA[$F{estadoPago}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="138" height="20" uuid="a5ef789e-e068-44d8-8d25-dd4c98e74518"/>
+				<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="104" splitType="Stretch">
+			<textField>
+				<reportElement x="414" y="0" width="100" height="20" uuid="9974f22e-bfc6-492a-8cf4-1bc708a491a3"/>
+				<textFieldExpression><![CDATA[$P{pImporteTotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="314" y="0" width="100" height="20" uuid="e4a51eff-8398-44c5-9e90-84f70318ce76"/>
+				<text><![CDATA[Importe Total:]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="77" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="52" splitType="Stretch"/>
+	</summary>
+</jasperReport>

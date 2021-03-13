@@ -1,0 +1,567 @@
+.carousel-item1{
+    width: 100%;
+    height: 500px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } 
+  
+  .copyrightLav{
+      color: #05B9A2;
+      padding: 10px;
+  }
+  
+  .imgTitle{
+      width:125px;
+      height:115px;
+      transition: 1s;
+  }
+  .imgTitle:hover{
+      transform: scale(1.1);
+  }
+  
+  .titleLav{
+      font-size: 120px;
+      font-family: fantasy;
+      color: #205965;
+      -webkit-text-stroke: 0.2px black;
+      display: inline;
+      text-shadow: 4px 4px 10px white;
+      vertical-align: middle;
+      text-align: center;
+      transition: all 1s;
+  }
+  .titleLav:hover{
+      text-shadow: 5px 5px 15px white;
+  }
+  
+  #iconFace{
+      width: 40px;
+      height: 25px;
+      margin-right: 30px;
+      transition: all .5s;
+  }
+
+  #iconFace:hover{
+      color: white;
+      transform: scale(1.2);
+  }
+  
+  #iconInsta{
+      width: 40px;
+      height: 25px;
+      margin-right: 30px;
+      transition: all .5s;
+  }
+
+  #iconInsta:hover{
+      color: white;
+      transform: scale(1.2);
+  }
+  
+  #iconWhats{
+      width: 40px;
+      height: 25px;
+      margin-right: 30px;
+      transition: all .5s;
+  }
+
+  #iconWhats:hover{
+      color: white;
+      transform: scale(1.2);
+  }
+  
+  .añoReport{
+      background-color: #e5e3e3;
+      border: 1px;
+      width: 65px;
+      padding-left: 10px;
+      transition: all .5s;
+      border-radius: 3px;
+  }
+  
+  .añoReport:focus{
+     width: 75px;
+     padding-left: 10px;
+     background-color: white;  
+  }
+  
+  .btnReport{
+      background-color: #5FDA5B;
+      box-shadow: 1px 2px 5px black;
+      transition: all .3s;
+      
+  }
+  .btnReport:hover{
+      background-color: #aedbad;
+      text-shadow: 2px 2px 5px black;
+  }
+  
+  .btnUser{
+      transition: all 1s;
+      padding: 0px;
+  }
+  
+  .btnUser:hover{
+      padding: 10px;
+  }
+  
+  .logoNav{
+      width:75px;
+      height: 70px;
+      animation-name: agitar;
+      animation-duration: 3s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      transform: rotate(15deg);
+  }
+  
+@keyframes agitar{
+      0%{
+      }   
+      100%{   
+      transform: rotate(-15deg);
+      }
+  }
+  
+  .btnNavLav{
+      transition: all 0.4s;
+  }
+  
+  .btnNavLav:hover{
+      padding: 5px 20px;
+  }
+  
+  .formLogin{
+      border:double; 
+      border-radius: 10px;
+      border-color:black;
+      background-color:white;
+      margin-top: 115px;
+      text-align: center;
+  }
+  
+  .inputLav{
+      margin-top: 10px;
+      transition: all 1s;
+  }
+  
+  .inputLav:focus{
+      padding: 20px; 
+  }
+  
+  .welcome{
+  display: inline-block;
+  color: #fff;
+  background-color: #007bff;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  border-radius: 6px;
+  transition: all 1s;
+  }
+  
+  .welcome:hover{
+     font-size: 85%; 
+  }
+  
+  .imagen{
+      margin-bottom: 20px;
+      width: 140px;
+      transition: all 1s;
+  }
+  .imagen:hover{
+      width: 160px;
+  }
+  
+  .button1{
+      background-color: #007BFF;
+      width: 100px;
+      height: 40px;
+      color: white;
+      transition: all 0.5s;
+      
+  }
+  
+  .button1:hover {
+      background-color: #80bdff;
+      width: 110px;
+      height: 50px;
+      color: black;
+         
+  }
+  
+  .divServicios{
+      width:75%;
+      border-radius: 8px;
+      margin: auto;
+      padding: 10px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      background-color: white;
+  
+  }
+  
+  @font-face{
+      font-family: 'MiPropiaFuente';
+      src:url('NEXTART.otf');
+  }
+  
+  .mifuente{
+    font: bold 40px 'MiPropiaFuente';
+    color: #0283FB;
+    text-shadow: 2px 2px 5px white;
+  }
+  
+  .cabecera{
+      text-shadow: 2px 2px 5px black;
+      border: solid gray 1px !important; 
+      text-align: center;
+      transition: all 0.5s;
+      font-size: 16px;
+  }
+  .cabecera:hover{
+      border: solid black 1px !important;
+  }
+  
+  .dtpFecha{
+      width: 55px;
+      margin-right: 5px;
+      transition: all 0.5s;
+  }
+  .dtpFecha:focus{
+      width: 150px;
+  }
+  
+  #btnAccion{
+     transition: all 0.5s;
+  }
+  #btnAccion:hover{
+     transform: scale(1.2);
+  }
+  
+  .btnAgregarRegistro{
+      background-color: #5FDA5B;
+      margin-bottom: 5px;
+      transition: all 0.2s;
+  }
+  .btnAgregarRegistro:hover{
+      background-color: seagreen;
+      margin-bottom: 5px;
+      color: white;
+      transform: scale(1.1);
+  }
+  
+  .btnAgregarServicio{
+      background-color: #5FDA5B;
+      margin-bottom: 5px;
+      transition: all 0.2s;
+  }
+  .btnAgregarServicio:hover{
+      background-color: seagreen;
+      margin-bottom: 5px;
+      color: white;
+      transform: scale(1.1);
+  }
+  
+  .divRegistros{
+      background-color: white;
+      position: relative;
+      margin-top: 40px;
+      margin-left: 35px;
+      margin-right: 35px;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      padding: 15px;
+  }
+  
+  .boxClientes{
+      background-color: #e5e3e3;
+      width: 380px;
+      transition: all 0.5s;
+      display: inline-block;
+  }
+  .boxClientes:focus{
+      background-color: white;
+      width: 400px;
+      padding: 10px 10px 10px 15px;
+      height: 45px;
+  }
+  
+  .boxImporte{
+      background-color: #e5e3e3;
+      width: 150px;
+      transition: all 0.5s;
+  }
+  .boxImporte:focus{
+      background-color: white;
+      width: 170px;
+      padding: 10px 10px 10px 15px;
+      height: 45px;
+  }
+  
+  .btnRegistro{
+      background-color: #0D84FF;
+      border-color: white;
+      border-width: 3px;
+      color: white;
+      transition: all 0.5s;
+      width: 90%;
+      margin-left: 29px;
+      margin-right: 5px;
+  }
+  .btnRegistro:hover{
+      transform: scale(1.1);
+      background-color: white;   
+  }
+  
+  .divAltaServicio{
+      margin: 40px auto 40px;
+      padding: 10px 20px 10px 20px;
+      width: 50%;
+      border:double;
+      border-radius: 10px;
+      background-color: #17A2B8;
+      border-color:black;
+      opacity: 0.9;
+  }
+  
+  .titleNuevoServicio{
+      text-shadow: 2px 2px 10px grey;
+      color:#17A2B8;
+      background-color: white;
+      border-radius: 5px;
+  }
+  
+  .boxServicios{
+      width: 700px;
+      transition: all 0.5s;
+      margin: auto;
+      margin-bottom: 20px;
+      
+  }
+  .boxServicios:focus{
+      transform: scale(1.05);
+      padding: 5px;
+  }
+  
+  .labelSubtitle{
+      color: white;
+      margin-left: 10px;
+      text-shadow: 2px 2px 5px black;
+  }
+  
+  .btnAgregarServicioRegistro{
+      color: white;
+      width: 80%;
+      background-color: #17A2B8;
+      border: solid 3px white;
+      transition: all 0.5s;
+  }
+  .btnAgregarServicioRegistro:hover{
+      background-color: white;
+      transform: scale(1.05);
+  }
+  
+  .btnClienteNuevo{
+      color: black;
+      background-color: window;
+      padding: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+      transition: all 0.5s;
+  }
+  .btnClienteNuevo:hover{
+      transform: scale(1.05);
+      border: 3px white solid;
+      background-color: #0D84FF;
+      color: white;
+  }
+  
+  .divAltaRegistro{
+      width: 40%;
+      margin: auto;
+      border:double;
+      border-radius: 10px;
+      background-color: #007BFF;
+      border-color:black;
+      opacity: 0.9;
+      margin-top: 130px;
+      margin-bottom: 130px;
+      padding: 10px 30px 10px 30px;
+  }
+
+  @media (max-width: 600px) {
+    .carousel-item1 { 
+      height: 280px;
+    }
+  }
+  
+  /*Para alinear los botones y cuadros de busqueda*/
+  .btn-group, .btn-group-vertical{
+      position: absolute !important;
+  }
+  
+  .footerLav{
+      background-color: #205661;
+      padding-top: 15px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+  }
+  
+  .fondoInicio{
+      background-image:url("img/fondo1.jpg");
+      background-color: #cccccc;
+  }
+  
+  .celeste{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#206674+0,205a66+44,1f4e57+100 */
+background: rgb(32,102,116); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(32,102,116,1) 0%, rgba(32,90,102,1) 44%, rgba(31,78,87,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(32,102,116,1) 0%,rgba(32,90,102,1) 44%,rgba(31,78,87,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(32,102,116,1) 0%,rgba(32,90,102,1) 44%,rgba(31,78,87,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206674', endColorstr='#1f4e57',GradientType=0 ); /* IE6-9 */
+
+  }
+  
+    .verdeAqua{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0c9a87+0,00ceb3+100 */
+background: rgb(12,154,135); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(12,154,135,1) 0%, rgba(0,206,179,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(12,154,135,1) 0%,rgba(0,206,179,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(12,154,135,1) 0%,rgba(0,206,179,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c9a87', endColorstr='#00ceb3',GradientType=1 ); /* IE6-9 */
+  }
+  .letraVerdeAqua{
+      color: #05B9A2;
+  }
+  
+    .theadR{
+    background-color: #007BFF;
+    color: white;
+  }
+      .theadS{
+    background-color: #17A2B8;
+    color: white;
+    margin-top: 4px;
+  }
+        .theadG{
+    background-color:#3669A1;
+    color: white;
+  }
+          .theadC{
+    background-color:#FEC68D;
+    color: white;
+  }
+  
+      .theadD{
+    background-color:#7fb8f4;
+    color: white;
+  }
+  
+      .azul{
+    background-color: #3669A1;
+  }
+      .btnRegistrar{
+    background-color: #1F5661;
+    border-width: 4px;
+    width: 300px;
+    height: 90px;
+    border-radius: 50px;
+    font-size: 50px;
+    font-family: fantasy;
+    transition: all .5s;
+    
+  }
+  
+  .btnRegistrar:hover{
+      transform: scale(1.1);
+      border-width: 6px;
+      padding-top: 0;
+  }
+  
+        .naranja{
+    background-color: #FEC68D;
+  }
+  
+  .sectionLav{
+      text-align: center;
+      margin-bottom: 35px;
+      position: relative;
+  }
+  
+  .fondo{
+    width: 100%;
+    background-image:url("fondoBurbuja1.jpg");
+    background-repeat: repeat-x;
+    background-size: 1850px;
+    opacity: 1;
+    position: relative;
+  }
+  
+  .opacidadMedia{
+      opacity: 0.95;
+  }
+  
+  .h1Report{
+      text-align: center;
+      background-color: #91c6bf;
+      color: white;
+      box-shadow: 2px 2px 20px black;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      text-shadow: 2px 2px 5px black;
+  }
+  
+  .h2AltaRegistro  {
+      background-color: white;
+      color: #1085FF;
+      text-shadow: 2px 2px 5px grey;
+      margin-top: 10px;
+      
+      
+  }
+  
+  .sombra{
+      text-shadow: 2px 2px 5px black; 
+  }
+  .sombraCarousel{
+      text-shadow: 4px 4px 10px black;
+  }
+  
+  .sombraBlanca{
+      text-shadow: 4px 4px 10px white;
+  }
+  
+  .aladerecha{
+      text-align: right;
+  }
+  
+  .alaizquierda{
+      text-align: left;
+  }
+  
+  .borderReport{
+      border-color:  black;
+      border:solid; 
+      border-style: inset;
+      border-radius: 5px;
+      padding: 10px 30px 10px 10px;
+      text-align: left;
+  }
+  
+  .boxReport{
+      border:double;
+      background-color: #91c6bf;
+      border-radius: 10px;
+      border-color:#1F515B;
+      margin-right:15px;
+      padding: 10px 20px;
+      display: inline-block;
+  }
+  
+  

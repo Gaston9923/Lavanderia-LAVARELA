@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7cdfd3e8-6e89-4029-8e59-0c79bf2fc88f">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="pAnio" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[Select  servicio, COUNT(d.idServicio)'Cantidad'
+From DetalleRegistro d, Servicios s, Registros r
+Where d.idServicio = s.idServicio and
+	  r.idRegistro = d.idRegistro and
+	  year(r.fecha) = 2020	  
+Group by servicio]]>
+	</queryString>
+	<field name="servicio" class="java.lang.String"/>
+	<field name="Cantidad" class="java.lang.Integer"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="fbc363ed-838e-4ca0-be26-20db4dbb09b6"/>
+				<staticText>
+					<reportElement x="20" y="20" width="370" height="43" forecolor="#FFFFFF" uuid="28a80093-d6e2-4179-9e01-61d1065eb70c"/>
+					<textElement>
+						<font size="30" isBold="true"/>
+					</textElement>
+					<text><![CDATA[REPORTE LAVANDERIA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="63" width="177" height="29" forecolor="#FFFFFF" uuid="376f06d1-4a97-48fd-a804-5b7684fc45c3"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Servicios utilizados de ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="197" y="63" width="100" height="29" forecolor="#F0F0F0" uuid="d1a28376-f1c7-44cd-ad18-17d1061d854b"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{pAnio}]]></textFieldExpression>
+				</textField>
+				<image>
+					<reportElement x="488" y="0" width="107" height="92" uuid="8c65a552-1b4d-4428-a353-b6f9d82d30b5"/>
+					<imageExpression><![CDATA["D:\\GASTON\\TECNICATURA PROG\\TESIS\\LAVARELA.110534(25 ENTREGA)\\LAVARELA.110534\\web\\img\\LogoLavarela.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="7833cf4d-cd69-487c-bed3-65ae6ab97165"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="211" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="9dddcc75-4629-489c-9def-5d80308c8697"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="211" y="0" width="84" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="f3da9a40-5788-4739-b51d-e8c17313db6c"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="295" height="1" uuid="b5db9b84-e5b1-4db0-bd8b-8e8940937e10"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="211" height="20" uuid="ef79f626-8c41-4987-949f-c35c0573d41e"/>
+				<textElement textAlignment="Left">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{servicio}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="211" y="0" width="84" height="20" uuid="59261656-9b34-46b3-b84f-7a9da34d4b49"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Cantidad}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="d99de5b0-9995-43d4-ab96-db0d6dc2c66d"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="f4183810-3cb5-43b9-b132-6e89577e5462"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="e80f6270-8404-4049-a544-524d4f8086ae"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

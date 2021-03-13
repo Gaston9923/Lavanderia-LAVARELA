@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5dcfaf69-062e-4ca8-82fb-ae28185840b6">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="pFechaDesde" class="java.lang.String"/>
+	<parameter name="pFechaHasta" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[Select fechaGasto,idGasto,descripcion,f.formaPago,importe
+From Gastos g, FormaPago f
+Where g.idFormaPago=f.idFormaPago and
+fechaGasto between $P{pFechaDesde} and $P{pFechaHasta}]]>
+	</queryString>
+	<field name="fechaGasto" class="java.sql.Date"/>
+	<field name="idGasto" class="java.lang.Integer"/>
+	<field name="descripcion" class="java.lang.String"/>
+	<field name="formaPago" class="java.lang.String"/>
+	<field name="importe" class="java.math.BigDecimal"/>
+	<variable name="importe_1" class="java.math.BigDecimal" resetType="Page" calculation="Sum">
+		<variableExpression><![CDATA[$F{importe}]]></variableExpression>
+	</variable>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="e988b104-3be8-4b1c-87f4-e533b5e59a12"/>
+				<staticText>
+					<reportElement x="20" y="20" width="370" height="43" forecolor="#FFFFFF" uuid="7cb8a0f8-f420-4a59-b294-c3612316eaf7"/>
+					<textElement>
+						<font size="30" isBold="true"/>
+					</textElement>
+					<text><![CDATA[REPORTE LAVANDERIA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="20" y="62" width="111" height="30" forecolor="#FFFFFF" uuid="fec1a303-efcf-46e9-9b6a-993b42713b85"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Gastos desde]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="131" y="63" width="138" height="29" forecolor="#F0F0F0" uuid="b76c7df5-27ca-4add-a2bc-cf265cb7a6ab"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{pFechaDesde}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="231" y="62" width="111" height="30" forecolor="#FFFFFF" uuid="d2bd9fdd-f2b6-4b6a-a80d-bb508894166c"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Hasta]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="290" y="62" width="100" height="29" forecolor="#F0F0F0" uuid="2a632cf5-c588-46b6-b248-49a5bcd9030f"/>
+					<textElement verticalAlignment="Bottom">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{pFechaHasta}]]></textFieldExpression>
+				</textField>
+				<image>
+					<reportElement x="485" y="0" width="110" height="91" uuid="c4111fe8-5f07-47c5-ae2f-a5695f897cea"/>
+					<imageExpression><![CDATA["D:\\GASTON\\TECNICATURA PROG\\TESIS\\LAVARELA.110534(25 ENTREGA)\\LAVARELA.110534\\web\\img\\LogoLavarela.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="c72e396b-05ea-42fc-bf8e-dd2a71505c75"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="100" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="7c519439-3d3e-495c-a4c6-da1b691bb252"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="0" width="59" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="8c6f960c-c8ec-43c8-8174-a805dacd7d4d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[N° Gasto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="159" y="0" width="180" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="75cca85c-a110-4b66-84db-15829eec843e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descripcion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="339" y="0" width="126" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="6a61028c-5990-4e82-8ef8-8d49ee892d5a"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Forma Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="465" y="0" width="90" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="33a72a11-4298-4d6b-905a-27f0b37fc1ca"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Importe]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="918fd99a-6929-41c9-b16f-16b872c0cbce"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="100" height="20" uuid="67446585-a50f-47a3-9391-f9b9a47416f9"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaGasto}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="100" y="0" width="59" height="20" uuid="1cfbe93e-8cac-4493-bfd0-cd53efc2ff84"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idGasto}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="159" y="0" width="180" height="20" uuid="2ba4924f-bf72-43f7-ae61-b2bb99e8657f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="465" y="0" width="90" height="20" uuid="afe9cde6-4f46-4ccc-bc55-f62793c77292"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{importe}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="339" y="0" width="126" height="20" uuid="952837d9-57d0-4fd1-9669-7ef3e84de10c"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{formaPago}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="13">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="0" width="515" height="13" backcolor="#E6E6E6" uuid="8d21fa2f-e801-4e6a-bad1-30fa1b7e9bc2"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Página "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="0" width="40" height="13" backcolor="#E6E6E6" uuid="834ab1ab-15cb-45ea-88ff-08a9bad1aea6"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="0" width="100" height="13" uuid="7f3fbeb0-7e1e-44a6-b298-ab94d5b5dadb"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="20">
+			<textField>
+				<reportElement x="465" y="0" width="90" height="20" uuid="6d72f54e-568a-426d-ab22-1beb35a59cda"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{importe_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="365" y="0" width="100" height="20" uuid="61b1b3e0-5ac8-4e17-b72a-982f3ab9f8cc"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Gasto Total:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

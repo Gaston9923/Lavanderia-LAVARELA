@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet -->
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete"><link type="text/css" id="dark-mode" rel="stylesheet" href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8&quot;">
+        <!--BOOTSTRAP CSS-->
+        <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link rel="stylesheet" type="text/css" href="./Registros LAVARELA_files/bootstrap.min.css">
+        <!--Codigo CSS Propio-->
+        <link rel="stylesheet" type="text/css" href="./Registros LAVARELA_files/estilo.css">
+        <!--DATATABLE CSS-->
+        <link rel="stylesheet" type="text/css" href="./Registros LAVARELA_files/datatables.min.css">
+        <link rel="stylesheet" type="text/css" href="./Registros LAVARELA_files/dataTables.bootstrap4.css">  
+        <link rel="stylesheet" type="text/css" href="./Registros LAVARELA_files/buttons.jqueryui.min.css">  
+        <link rel="stylesheet" type="text/css" href="./Registros LAVARELA_files/buttons.jqueryui.min.css">
+        
+        <script src="./Registros LAVARELA_files/all.min.js.descarga" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+        
+        <title>Registros LAVARELA</title>
+    </head>
+    <body cz-shortcut-listen="true">
+        <!--Comienza el NAV-->
+        <nav class="navbar navbar-light w-auto p-3 celesteNav">
+            <a class="navbar-brand" href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#">
+              <img src="./Registros LAVARELA_files/lavadora1.png" width="45" height="45" class="d-inline-block align-middle" alt="">
+              LAVARELA
+            </a>
+            <ul>
+                <div class="dropdown align-middle" style="">
+                <button class=" btn btn-outline-light dropdown-toggle " style=" border: none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Usuario Ingresado
+                </button>
+                <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#">
+                        <img src="./Registros LAVARELA_files/user1.png" alt="80" width="80">
+                    </a>
+                  <a class="dropdown-item" href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#">Usuario</a>
+                  <a class="dropdown-item" href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#">usuario@gmail.com</a>
+                  <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="http://localhost:8080/LAVARELA.110534/index.jsp">Cerrar Sesión</a>
+                </div>
+             </div>
+            </ul>
+        </nav>
+            <!--Comienza el NAV-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="btn btn-outline-light" style="border: none" href="http://localhost:8080/LAVARELA.110534/inicio.jsp">Inicio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="btn btn-outline-light" style="margin-left: 1px; border: none" href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet">Registros <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="btn btn-outline-light" style="margin-left: 1px; border: none" href="http://localhost:8080/LAVARELA.110534/ListarServiciosServlet">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="btn btn-outline-light" style="margin-left: 1px; border: none" href="http://localhost:8080/LAVARELA.110534/ListarGastosServlet">Gastos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="btn btn-outline-light" style="margin-left: 1px; border: none" href="http://localhost:8080/LAVARELA.110534/ListarClientesServlet">Clientes</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <!--Fin de NAV-->
+                  
+        <!--TABLA DE REGISTROS-->
+    
+        <div style="height:20px"></div>          
+        <div class="container-fluid col-sm-10 ">
+            <h1 class="text-center">Tabla de <span class="badge badge-primary">REGISTROS</span></h1>
+            <div class="">
+            <div class="">
+            <div class=" ">
+                <div class="">
+                    <div class="col-lg-14">
+                        <a class="btn btn-success" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet">Nuevo Registro</a>           
+                    </div>          
+                </div>               
+            </div><div style="height:4px"></div><div id="tablaRegistros_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="dt-buttons">      <button class="dt-button buttons-excel buttons-html5 btn btn-success" tabindex="0" aria-controls="tablaRegistros" type="button" title="Exportar a Excel"><span><svg class="svg-inline--fa fa-file-excel fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-excel" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm60.1 106.5L224 336l60.1 93.5c5.1 8-.6 18.5-10.1 18.5h-34.9c-4.4 0-8.5-2.4-10.6-6.3C208.9 405.5 192 373 192 373c-6.4 14.8-10 20-36.6 68.8-2.1 3.9-6.1 6.3-10.5 6.3H110c-9.5 0-15.2-10.5-10.1-18.5l60.3-93.5-60.3-93.5c-5.2-8 .6-18.5 10.1-18.5h34.8c4.4 0 8.5 2.4 10.6 6.3 26.1 48.8 20 33.6 36.6 68.5 0 0 6.1-11.7 36.6-68.5 2.1-3.9 6.2-6.3 10.6-6.3H274c9.5-.1 15.2 10.4 10.1 18.4zM384 121.9v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg><!-- <i class="fas fa-file-excel"></i> --> </span></button> <button class="dt-button buttons-pdf buttons-html5 btn btn-danger" tabindex="0" aria-controls="tablaRegistros" type="button" title="Exportar a PDF"><span><svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg><!-- <i class="fas fa-file-pdf"></i> --> </span></button> <button class="dt-button buttons-print btn btn-info" tabindex="0" aria-controls="tablaRegistros" type="button" title="Imprimir"><span><svg class="svg-inline--fa fa-print fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="print" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M448 192V77.25c0-8.49-3.37-16.62-9.37-22.63L393.37 9.37c-6-6-14.14-9.37-22.63-9.37H96C78.33 0 64 14.33 64 32v160c-35.35 0-64 28.65-64 64v112c0 8.84 7.16 16 16 16h48v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h48c8.84 0 16-7.16 16-16V256c0-35.35-28.65-64-64-64zm-64 256H128v-96h256v96zm0-224H128V64h192v48c0 8.84 7.16 16 16 16h48v96zm48 72c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z"></path></svg><!-- <i class="fa fa-print"></i> --> </span></button> <button class="dt-button buttons-collection buttons-colvis btn btn-secondary" tabindex="0" aria-controls="tablaRegistros" type="button" title="Seleccionar columnas visibles" aria-haspopup="true" aria-expanded="false"><span><svg class="svg-inline--fa fa-list-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="list-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M464 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zM128 120c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm288-136v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12z"></path></svg><!-- <i class="fa fa-list-alt"></i> --> </span></button> </div><div id="tablaRegistros_filter" class="dataTables_filter"><label>Buscar:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="tablaRegistros"></label></div><table id="tablaRegistros" class="table table-striped table-hover table-bordered dataTable no-footer" role="grid" aria-describedby="tablaRegistros_info">
+                
+            
+            <thead class="thead-dark">
+                <tr role="row"><th scope="col" class="text-center sorting_asc" tabindex="0" aria-controls="tablaRegistros" rowspan="1" colspan="1" aria-sort="ascending" aria-label="IdRegistro: activate to sort column descending" style="width: 81px;">IdRegistro</th><th scope="col" class="text-center sorting" tabindex="0" aria-controls="tablaRegistros" rowspan="1" colspan="1" aria-label="Usuario: activate to sort column ascending" style="width: 189px;">Usuario</th><th scope="col" class="text-center sorting" tabindex="0" aria-controls="tablaRegistros" rowspan="1" colspan="1" aria-label="Cliente: activate to sort column ascending" style="width: 93.8px;">Cliente</th><th scope="col" class="text-center sorting" tabindex="0" aria-controls="tablaRegistros" rowspan="1" colspan="1" aria-label="CantidadServ: activate to sort column ascending" style="width: 105px;">CantidadServ</th><th scope="col" class="text-center sorting" tabindex="0" aria-controls="tablaRegistros" rowspan="1" colspan="1" aria-label="Estado Pago: activate to sort column ascending" style="width: 97px;">Estado Pago</th><th scope="col" class="text-center sorting" tabindex="0" aria-controls="tablaRegistros" rowspan="1" colspan="1" aria-label="Estado Servicio: activate to sort column ascending" style="width: 119.4px;">Estado Servicio</th><th scope="col" class="text-center sorting" tabindex="0" aria-controls="tablaRegistros" rowspan="1" colspan="1" aria-label="Fecha: activate to sort column ascending" style="width: 67.4px;">Fecha</th><th scope="col" class="text-center sorting" tabindex="0" aria-controls="tablaRegistros" rowspan="1" colspan="1" aria-label="Acciones: activate to sort column ascending" style="width: 138.6px;">Acciones</th></tr>    
+            </thead>
+            <tbody>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            <tr class="text-center odd" role="row">
+                        <td scope="row" class="sorting_1">30</td>
+                        <td scope="row">gastonzapata70@gmail.com</td>
+                        <td scope="row">Perez Pepas</td>
+                        <td scope="row">8</td>
+                        <td scope="row"><span class="badge badge-primary">Debe</span></td>
+                        <td scope="row">Incompleto</td>
+                        <td scope="row">2020-07-02</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=30"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=30"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=30"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr><tr class="text-center even" role="row">
+                        <td scope="row" class="sorting_1">42</td>
+                        <td scope="row">gastonzapata70@gmail.com</td>
+                        <td scope="row">Zapata Hernan</td>
+                        <td scope="row">5</td>
+                        <td scope="row"><span class="badge badge-primary">Pagado</span></td>
+                        <td scope="row">completado</td>
+                        <td scope="row">2020-07-03</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=42"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=42"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=42"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr><tr class="text-center odd" role="row">
+                        <td scope="row" class="sorting_1">43</td>
+                        <td scope="row">gastonzapata70@gmail.com</td>
+                        <td scope="row">Zapata Luciano</td>
+                        <td scope="row">5</td>
+                        <td scope="row"><span class="badge badge-primary">Debe</span></td>
+                        <td scope="row">Incompleto</td>
+                        <td scope="row">2020-07-03</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=43"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=43"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=43"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr><tr class="text-center even" role="row">
+                        <td scope="row" class="sorting_1">44</td>
+                        <td scope="row">gastonzapata70@gmail.com</td>
+                        <td scope="row">Zapata Hernan</td>
+                        <td scope="row">5</td>
+                        <td scope="row"><span class="badge badge-primary">Pagado</span></td>
+                        <td scope="row">completado</td>
+                        <td scope="row">2020-07-03</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=44"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=44"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=44"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr><tr class="text-center odd" role="row">
+                        <td scope="row" class="sorting_1">49</td>
+                        <td scope="row">gastonzapata70@gmail.com</td>
+                        <td scope="row">Perez Pepas</td>
+                        <td scope="row">1</td>
+                        <td scope="row"><span class="badge badge-primary"></span></td>
+                        <td scope="row">completado</td>
+                        <td scope="row">2020-07-04</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=49"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=49"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=49"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr><tr class="text-center even" role="row">
+                        <td scope="row" class="sorting_1">50</td>
+                        <td scope="row">gastonzapata70@gmail.com</td>
+                        <td scope="row">Zapata Luciano</td>
+                        <td scope="row">10</td>
+                        <td scope="row"><span class="badge badge-primary"></span></td>
+                        <td scope="row">libre</td>
+                        <td scope="row">2020-07-04</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=50"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=50"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=50"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr><tr class="text-center odd" role="row">
+                        <td scope="row" class="sorting_1">52</td>
+                        <td scope="row">gastonzapata70@gmail.com</td>
+                        <td scope="row">Perez Pepas</td>
+                        <td scope="row">10</td>
+                        <td scope="row"><span class="badge badge-primary">Debe</span></td>
+                        <td scope="row">libre</td>
+                        <td scope="row">2020-07-04</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=52"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=52"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=52"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr><tr class="text-center even" role="row">
+                        <td scope="row" class="sorting_1">53</td>
+                        <td scope="row">prueba@gmail.com</td>
+                        <td scope="row">Zapata Hernan</td>
+                        <td scope="row">10</td>
+                        <td scope="row"><span class="badge badge-primary">Pagado</span></td>
+                        <td scope="row">libre</td>
+                        <td scope="row">2020-07-04</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=53"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=53"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=53"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr><tr class="text-center odd" role="row">
+                        <td scope="row" class="sorting_1">54</td>
+                        <td scope="row">gastonzapata70@gmail.com</td>
+                        <td scope="row">Perez Pepas</td>
+                        <td scope="row">2</td>
+                        <td scope="row"><span class="badge badge-primary">SeÃ±ado</span></td>
+                        <td scope="row">librera</td>
+                        <td scope="row">2020-07-04</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=54"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=54"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=54"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr><tr class="text-center even" role="row">
+                        <td scope="row" class="sorting_1">56</td>
+                        <td scope="row">gastonzapata70@gmail.com</td>
+                        <td scope="row">Zapata Hernan</td>
+                        <td scope="row">10</td>
+                        <td scope="row"><span class="badge badge-primary">Debe</span></td>
+                        <td scope="row">Incompleto</td>
+                        <td scope="row">2020-07-04</td>      
+                        <td scope="row">
+                            <div class="text-center">
+                                <div classs="btn-group">
+                                    <a class="btn btn-primary btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarRegistroServlet?idRegistro=56"><svg class="svg-inline--fa fa-pencil-alt fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path></svg><!-- <i class="fas fa-pencil-alt" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-danger btn-sm" href="http://localhost:8080/LAVARELA.110534/EliminarRegistroServlet?idRegistro=56"><svg class="svg-inline--fa fa-trash fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="trash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"></path></svg><!-- <i class="fa fa-trash" aria-hidden="true"></i> --></a>
+                                    <a class="btn btn-info btn-sm" href="http://localhost:8080/LAVARELA.110534/AgregarDetalleRegistroServlet?idRegistro=56"><svg class="svg-inline--fa fa-plus-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="plus-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> --> Detalle</a>
+                                </div>
+                           </div>
+                        </td>              
+                    </tr></tbody>          
+        </table><div class="dataTables_info" id="tablaRegistros_info" role="status" aria-live="polite">Mostrando registros del 1 al 10 de un total de 12 registros</div><div class="dataTables_length" id="tablaRegistros_length"><label>Mostrar <select name="tablaRegistros_length" aria-controls="tablaRegistros" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> registros</label></div><div class="dataTables_paginate paging_simple_numbers" id="tablaRegistros_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="tablaRegistros_previous"><a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#" aria-controls="tablaRegistros" data-dt-idx="0" tabindex="0" class="page-link">Anterior</a></li><li class="paginate_button page-item active"><a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#" aria-controls="tablaRegistros" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#" aria-controls="tablaRegistros" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item next" id="tablaRegistros_next"><a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#" aria-controls="tablaRegistros" data-dt-idx="3" tabindex="0" class="page-link">Siguiente</a></li></ul></div></div>
+                </div>  
+        </div>
+        </div>
+        
+        <!--TABLA DE REGISTROS-->
+
+        <!-- MODAL ELIMINAR REGISTRO -->
+        <div class="modal fade" id="modalEliminarRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ¿Esta seguro que desea eliminar el registro?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-danger">Eliminar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="height:50px"></div>
+    
+    <!-- MODAL ELIMINAR REGISTRO -->
+
+    
+    <!-- FOOTER -->
+    <footer class="page-footer font-small blue pt-4">
+
+ <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#!">Link 1</a>
+          </li>
+          <li>
+            <a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#!">Link 2</a>
+          </li>
+          <li>
+            <a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#!">Link 3</a>
+          </li>
+          <li>
+            <a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#!">Link 1</a>
+          </li>
+          <li>
+            <a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#!">Link 2</a>
+          </li>
+          <li>
+            <a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#!">Link 3</a>
+          </li>
+          <li>
+            <a href="http://localhost:8080/LAVARELA.110534/ListarRegistrosServlet#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+    <!--Jquery, Popper, Bootstrap-->
+        <script src="./Registros LAVARELA_files/jquery-3.3.1.min.js.descarga"></script>
+        <script src="./Registros LAVARELA_files/popper.min.js.js.descarga"></script>
+        <script src="./Registros LAVARELA_files/bootstrap.min.js.descarga"></script>
+    <!--Datatables JS--> 
+        <script type="text/javascript" src="./Registros LAVARELA_files/jquery.dataTables.min.js.descarga"></script>
+        <script type="text/javascript" src="./Registros LAVARELA_files/dataTables.bootstrap4.min.js.descarga"></script>
+    <!-- Para usar botones en DATATABLES JS -->  
+        <script src="./Registros LAVARELA_files/dataTables.buttons.min.js.descarga"></script>  
+        <script src="./Registros LAVARELA_files/jszip.min.js.descarga"></script>   
+        <script src="./Registros LAVARELA_files/pdfmake.min.js.descarga"></script>    
+        <script src="./Registros LAVARELA_files/vfs_fonts.js.descarga"></script>
+        <script src="./Registros LAVARELA_files/buttons.html5.min.js.descarga"></script>
+        <script src="./Registros LAVARELA_files/buttons.print.min.js.descarga"></script>
+        <script src="./Registros LAVARELA_files/buttons.colVis.min.js.descarga"></script>
+    <!--Codigo JS Propio-->   
+        <script type="text/javascript" src="./Registros LAVARELA_files/main.js.descarga"></script> 
+
+
+</body></html>
